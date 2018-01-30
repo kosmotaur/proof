@@ -19,7 +19,9 @@ defmodule Proof.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
   end
 
   defp description do
@@ -31,7 +33,7 @@ defmodule Proof.Mixfile do
       name: "proof",
       maintainers: ["Marek Stasikowski"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
+      links: %{"GitHub" => "https://github.com/kosmotaur/proof"}
     ]
   end
 end
